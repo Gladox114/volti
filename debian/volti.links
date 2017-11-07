@@ -1,0 +1,3 @@
+usr/lib/volti/volti.run usr/bin/volti
+usr/lib/volti/volti-mixer usr/bin/volti-mixer
+usr/lib/volti/volti-remote usr/bin/volti-remote

@@ -1,0 +1,40 @@
+Source: volti
+Section: sound
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Alessio Treglia <alessio@debian.org>
+Build-Depends:
+ debhelper (>= 7.0.50~),
+ python-all (>= 2.6.6-3)
+X-Python-Version: >= 2.6
+Standards-Version: 3.9.3
+Homepage: http://code.google.com/p/volti/
+Vcs-Git: git://anonscm.debian.org/pkg-multimedia/volti.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-multimedia/volti.git
+
+Package: volti
+Architecture: all
+Depends:
+ python-alsaaudio,
+ python-dbus,
+ python-gobject,
+ python-gtk2,
+ python-xlib,
+ ${misc:Depends},
+ ${python:Depends}
+Description: control audio volume from system tray/notification area
+ Volti is a lightweight GTK+ application for controlling audio
+ volume from system tray/notification area.
+ .
+ Features:
+  * no PulseAudio, GStreamer, Phonon etc. only ALSA is needed
+  * internal mixer application, either choosing any mixer app
+    is possible
+  * left click opens volume scale (slider)
+  * scroll wheel on tray icon changes volume, increment in
+    percents is configurable
+  * configurable middle click to toggle 'mute' or 'show mixer'
+  * nice tooltip with card and volume info
+  * support for multimedia keys
+  * support desktop notifications on keys events

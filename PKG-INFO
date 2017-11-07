@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: volti
+Version: 0.2.3
+Summary: GTK+ application for controlling audio volume from system tray/notification area
+Home-page: http://code.google.com/p/volti/
+Author: Milan Nikolic
+Author-email: gen2brain@gmail.com
+License: GNU GPLv3
+Download-URL: http://volti.googlecode.com/files/volti-0.2.3.tar.gz 
+Description: UNKNOWN
+Platform: Linux
+Requires: gtk
+Requires: gobject
+Requires: cairo
+Requires: alsaaudio
+Requires: dbus
+Requires: Xlib

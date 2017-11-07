@@ -1,0 +1,29 @@
+#!/bin/sh
+
+print_usage() {
+cat << EOF
+Usage: volti-remote [OPTION]
+
+Options:
+  -h    Show this help message and exit
+  -i    Increase volume
+  -d    Decrease volume
+  -m    Mute volume
+EOF
+}
+
+if test $# = 0; then
+    print_usage
+fi
+
+DBUS_SEND="dbus-send --type=method_call --dest=com.google.code.Volti /com/google/code/Volti com.google.code.Volti.emit"
+
+while getopts ":hidm" opt; do
+    case $opt in
+        i) `${DBUS_SEND} string:'volume-up'`;;
+        d) `${DBUS_SEND} string:'volume-down'`;;
+        m) `${DBUS_SEND} string:'mute'`;;
+        h) print_usage;;
+        *) print_usage;;
+    esac
+done

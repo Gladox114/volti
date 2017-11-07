@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_install:
+	dh_auto_install -- \
+		--install-lib=/usr/lib/volti
+
+override_dh_install:
+	dh_install
+	cd debian/volti && \
+		mv usr/bin/volti usr/lib/volti/volti.run && \
+		mv usr/bin/volti-mixer usr/lib/volti/ && \
+		mv usr/bin/volti-remote usr/lib/volti/

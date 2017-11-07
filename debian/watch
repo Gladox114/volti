@@ -1,0 +1,3 @@
+version=3
+http://code.google.com/p/volti/downloads/list?can=1 \
+.*/volti-(\d[\d.]*)\.(?:zip|tgz|tbz2|txz|tar\.gz|tar\.bz2|tar\.xz)

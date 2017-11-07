@@ -1,0 +1,31 @@
+volti (0.2.3-5) unstable; urgency=low
+
+  * Avoid crashes with 'odd' audio configurations (i.e. cards with no
+    mixer controls). (Closes: #684363)
+
+ -- Alessio Treglia <alessio@debian.org>  Thu, 30 Aug 2012 15:30:04 +0200
+
+volti (0.2.3-4) unstable; urgency=medium
+
+  * Fix typo in 0001-cards_without_mixer.patch which makes volti almost
+    unusable. (Closes: #679922)
+
+ -- Alessio Treglia <alessio@debian.org>  Sun, 22 Jul 2012 13:44:06 +0200
+
+volti (0.2.3-3) unstable; urgency=low
+
+  * Fix crash when the audio card has no mixers. (Closes: #673858)
+
+ -- Alessio Treglia <alessio@debian.org>  Mon, 21 May 2012 21:07:10 +0200
+
+volti (0.2.3-2) unstable; urgency=low
+
+  * Drop dependency on python-glade2, volti already uses GtkBuilder.
+
+ -- Alessio Treglia <alessio@debian.org>  Sat, 19 May 2012 21:41:29 +0200
+
+volti (0.2.3-1) unstable; urgency=low
+
+  * Initial release. (Closes: #670887)
+
+ -- Alessio Treglia <alessio@debian.org>  Mon, 30 Apr 2012 03:23:53 +0200
