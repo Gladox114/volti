@@ -1,3 +1,9 @@
+volti (0.2.3-5-0rangee1) rangeeos; urgency=medium
+
+  * Custom default preferences
+
+ -- René Vögeli <rvoegeli@rangee.com>  Tue, 07 Nov 2017 11:07:48 +0200
+
 volti (0.2.3-5) unstable; urgency=low
 
   * Avoid crashes with 'odd' audio configurations (i.e. cards with no
