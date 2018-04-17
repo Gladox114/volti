@@ -22,7 +22,6 @@ import sys
 
 try:
     import dbus
-    import dbus._version
     from dbus.mainloop.glib import DBusGMainLoop
     assert dbus.version >= (0, 80, 0)
 except ImportError, AssertionError:

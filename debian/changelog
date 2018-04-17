@@ -1,4 +1,10 @@
-volti (0.2.3-5-0rangee1) rangeeos; urgency=medium
+volti (0.2.3-5-0rangeeos2) rangeeos; urgency=medium
+
+  * Fix startup issues
+
+ -- René Vögeli <rvoegeli@rangee.com>  Tue, 17 Apr 2018 14:37:56 +0200
+
+volti (0.2.3-5-0rangeeos1) rangeeos; urgency=medium
 
   * Custom default preferences
 
