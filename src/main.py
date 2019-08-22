@@ -103,6 +103,15 @@ class VolumeTray(gtk.StatusIcon):
         self.pid_app = get_pid_app()
 
         self.alsactrl = AlsaControl(self.card_index, self.control, self)
+        if not hasattr(self.alsactrl, 'mixer'):
+            for card_index, card_name in enumerate(self.alsactrl.get_cards()):
+                if card_name == None: continue
+                log.Warn("Trying to open card %s\n" % card_name)
+                self.card_index = card_index
+                self.alsactrl = AlsaControl(self.card_index, self.control, self)
+                if hasattr(self.alsactrl, 'mixer'):
+                    break
+
         self.menu = PopupMenu(self)
         self.scale = VolumeScale(self)
         self.dbus = DBusService(self)
