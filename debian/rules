@@ -1,11 +1,9 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@ --with python2
+export PYBUILD_INSTALL_ARGS=--install-lib=usr/lib/volti
 
-override_dh_auto_install:
-	dh_auto_install -- \
-		--install-lib=/usr/lib/volti
+%:
+	dh $@ --with python2 --buildsystem=pybuild
 
 override_dh_install:
 	dh_install
